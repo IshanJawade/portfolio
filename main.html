@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ishan Jawade</title>
+  <meta name="description" content="Portfolio of Your Name: projects, achievements, and contact." />
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Projects, achievements, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="apple-styles.css">
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav>
+      <div class="nav-inner">
+        <div class="brand">Ishan Jawade</div>
+        <div class="spacer"></div>
+        <div class="nav-links" role="navigation" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#links">Links</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <div class="glossy-bar" aria-hidden="true"></div>
+      <h1>Building thoughtful software.</h1>
+      <p>CS graduate with interests in backend systems, motorsports data, and battery tech. I design reliable services and craft clean UIs with attention to detail.</p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" aria-labelledby="about-h">
+      <div class="section-head">
+        <h2 id="about-h">About</h2>
+        <p>Short intro</p>
+      </div>
+      <div class="grid">
+        <article class="card span-6">
+          <h3>Who I am</h3>
+          <p>I'm Your Name, a software engineer focused on backend development and systems design. I enjoy building fast, reliable APIs and tools for data-driven workflows.</p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Docker</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </article>
+        <article class="card span-6">
+          <h3>What I'm exploring</h3>
+          <p>Motorsport telemetry analytics, scalable email infrastructure, and energy storage tech. I enjoy clean architecture and performance profiling.</p>
+          <div class="tags">
+            <span class="tag">Telemetry</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Observability</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-h">
+      <div class="section-head">
+        <h2 id="projects-h">Projects</h2>
+        <p>Selected work</p>
+      </div>
+      <div class="grid">
+        <!-- Project Card -->
+        <article class="card span-6">
+          <h3>Race Telemetry Dashboard</h3>
+          <p>A web app for real-time lap analytics and strategy insights. Ingests CAN/OBD data, aggregates, and renders insights.</p>
+          <div class="meta">Java · Spring Boot · WebSocket · PostgreSQL</div>
+          <div class="tags">
+            <span class="tag">Data Viz</span>
+            <span class="tag">Streaming</span>
+          </div>
+          <p class="meta"><a href="https://github.com/yourname/telemetry" target="_blank" rel="noopener">Source on GitHub</a></p>
+        </article>
+        <article class="card span-6">
+          <h3>Battery Bench</h3>
+          <p>Automated AA/AAA battery testing rig and results site comparing discharge curves, capacity, and value.</p>
+          <div class="meta">Python · FastAPI · InfluxDB · Grafana</div>
+          <div class="tags">
+            <span class="tag">Hardware</span>
+            <span class="tag">IoT</span>
+          </div>
+          <p class="meta"><a href="https://github.com/yourname/battery-bench" target="_blank" rel="noopener">Source on GitHub</a></p>
+        </article>
+        <article class="card span-6">
+          <h3>HIPAA Data Manager</h3>
+          <p>Design for a compliant medical data pipeline with audit logging and encryption at rest/in transit.</p>
+          <div class="meta">Java · Spring · S3 · KMS</div>
+          <div class="tags">
+            <span class="tag">Security</span>
+            <span class="tag">Compliance</span>
+          </div>
+          <p class="meta"><a href="#" target="_blank" rel="noopener">Case Study</a></p>
+        </article>
+        <article class="card span-6">
+          <h3>LeetCode Notebook</h3>
+          <p>Curated notes, patterns, and solutions with emphasis on reasoning and trade-offs.</p>
+          <div class="meta">Java · Python</div>
+          <div class="tags">
+            <span class="tag">Algorithms</span>
+            <span class="tag">DSA</span>
+          </div>
+          <p class="meta"><a href="https://github.com/yourname/leetcode-notes" target="_blank" rel="noopener">Notes Repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" aria-labelledby="achievements-h">
+      <div class="section-head">
+        <h2 id="achievements-h">Achievements</h2>
+        <p>Highlights</p>
+      </div>
+      <div class="grid">
+        <div class="card span-4 achv">
+          <div class="medal">🏆</div>
+          <div>
+            <h3>Hackathon Winner</h3>
+            <p>1st place in University Hack 2025 for real-time telemetry insights.</p>
+          </div>
+        </div>
+        <div class="card span-4 achv">
+          <div class="medal">⭐</div>
+          <div>
+            <h3>LeetCode 500+</h3>
+            <p>Over 500 problems solved focusing on patterns and optimization.</p>
+          </div>
+        </div>
+        <div class="card span-4 achv">
+          <div class="medal">📜</div>
+          <div>
+            <h3>Certifications</h3>
+            <p>AWS Certified Cloud Practitioner; Kubernetes CKA (in progress).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section id="links" aria-labelledby="links-h">
+      <div class="section-head">
+        <h2 id="links-h">Links</h2>
+        <p>Find me online</p>
+      </div>
+      <div class="grid">
+        <article class="card span-6">
+          <h3>Profiles</h3>
+          <ul>
+            <!-- Replace with your actual links -->
+            <li><a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://leetcode.com/yourname" target="_blank" rel="noopener">LeetCode</a></li>
+          </ul>
+        </article>
+        <article class="card span-6">
+          <h3>Resume</h3>
+          <p>Grab a copy of my latest resume.</p>
+          <p><a href="/assets/YourName-Resume.pdf" download>Download PDF</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="section-head">
+        <h2 id="contact-h">Contact</h2>
+        <p>Let's build something</p>
+      </div>
+      <div class="grid">
+        <article class="card span-6">
+          <h3>Email</h3>
+          <p><a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+          <p class="meta">Or use the form. The POST target is ready for a Spring Boot endpoint.</p>
+        </article>
+        <article class="card span-6">
+          <!-- For future Spring Boot backend: create POST /api/contact to accept JSON or form-encoded data -->
+          <form action="/api/contact" method="post">
+            <label>
+              <span class="meta">Your name</span>
+              <input name="name" type="text" placeholder="Ada Lovelace" required />
+            </label>
+            <label>
+              <span class="meta">Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span class="meta">Message</span>
+              <textarea name="message" placeholder="Hello! I'd like to discuss..." required></textarea>
+            </label>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="credits">© <span id="y"></span> Your Name. Built with hand‑rolled HTML & CSS. Inspired by classic minimal design.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Keep JS minimal: update year, no frameworks required
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
