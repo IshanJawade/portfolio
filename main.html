@@ -10,15 +10,19 @@
   <meta property="og:type" content="website" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="apple-styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="nav-wrap">
-    <nav>
+    <nav class="container">
       <div class="nav-inner">
-        <div class="brand">Ishan Jawade</div>
-        <div class="spacer"></div>
-        <div class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#" class="brand">Your Name</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div id="primary-nav" class="nav-links" role="navigation" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#achievements">Achievements</a>
@@ -30,18 +34,18 @@
   </div>
 
   <header class="hero" role="banner">
-    <div class="hero-inner">
+    <div class="container hero-inner">
       <div class="glossy-bar" aria-hidden="true"></div>
       <h1>Building thoughtful software.</h1>
       <p>CS graduate with interests in backend systems, motorsports data, and battery tech. I design reliable services and craft clean UIs with attention to detail.</p>
       <div class="cta-row">
         <a class="btn" href="#projects">See Projects</a>
-        <a class="btn" href="#contact">Get in Touch</a>
+        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="container">
     <!-- About -->
     <section id="about" aria-labelledby="about-h">
       <div class="section-head">
@@ -212,14 +216,24 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <div class="credits">© <span id="y"></span> Your Name. Built with hand‑rolled HTML & CSS. Inspired by classic minimal design.</div>
+    <div class="container footer-inner">
+      <div class="credits">© <span id="y"></span> Your Name. Built with hand‑rolled HTML &amp; CSS. Inspired by classic minimal design.</div>
     </div>
   </footer>
 
   <script>
-    // Keep JS minimal: update year, no frameworks required
+    // Keep JS minimal: update year
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
   </script>
 </body>
 </html>
