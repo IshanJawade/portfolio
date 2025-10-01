@@ -69,9 +69,10 @@ p{ margin: 0 0 12px; }
   color: var(--text); text-decoration: none; padding: 6px 8px; border-radius: 8px;
 }
 .nav a:hover{ background: var(--surface); }
+.topBarActions{ display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 
 /* Theme toggle button */
-.theme-toggle .icon{ display: inline-block; vertical-align: middle; }
+.theme-toggle .icon{ display: inline-block; vertical-align: middle; align-items: center; }
 .theme-toggle .sun{ display: none; }
 .theme-toggle .moon{ display: inline; }
 html[data-theme="light"] .theme-toggle .sun{ display: inline; }
