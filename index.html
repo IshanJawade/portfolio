@@ -80,71 +80,127 @@
 
   <!-- Projects -->
   <main class="container">
-    ️
     <section id="projects" aria-labelledby="projects-title" class="section">
       <div class="section__header">
         <h2 id="projects-title">Projects</h2>
-        ⚠️Work In Progress⚠️ (Placeholder for now)
-        <p class="muted">Selected work showcasing API design, data, and systems engineering.</p>
+        <p class="muted">Personal projects</p>
       </div>
 
       <div class="grid">
         <article class="card">
           <div class="card__head">
-            <h3><a href="#" rel="nofollow">High-Throughput Event Ingest</a></h3>
-            <code class="tag">Go • Kafka • ClickHouse</code>
+            <h3>HIPAA-Compliant Medical Records Management System</h3>
+            <code class="tag">Spring Boot • React.js • PostgreSQL</code>
           </div>
           <p class="muted">
-            Built a horizontally scalable pipeline ingesting 500k events/min with at-least-once delivery and idempotent writes.
+            A full-stack web application using React.js, Java Spring Boot, and PostgreSQL to securely manage hospital patient data.
           </p>
           <ul class="list">
-            <li>gRPC gateway with zero-downtime deploys</li>
-            <li>Batching + compression for 4× cost reduction</li>
-            <li>End-to-end tracing (OpenTelemetry)</li>
+            <li>Deployed on AWS (EC2, S3, RDS) with auto-scaling and load balancing, ensuring 99.9% uptime.</li>
+            <li>Integrated Redis caching, reducing latency by 500ms and significantly improving user experience.</li>
+            <li>Implemented AES encryption for secure file sharing, leading to an 80% reduction in data leak incidents.</li>
+            <li>Integrated AWS CloudWatch audit logging with real-time alerts and automated monitoring, reducing unauthorized access incidents by 40% and ensuring HIPAA compliance.</li>
           </ul>
-          <div class="card__foot">
+          <!-- <div class="card__foot">
             <a class="pill" href="#">Repo</a>
             <a class="pill" href="#">Docs</a>
-          </div>
+          </div> -->
         </article>
 
         <article class="card">
           <div class="card__head">
-            <h3><a href="#" rel="nofollow">Payments API</a></h3>
-            <code class="tag">Java • Spring Boot • Postgres</code>
+            <h3>Dooper</h3>
+            <code class="tag">Spring Boot • MongoDB • React.js</code>
           </div>
           <p class="muted">
-            PCI-aware service handling webhooks, payouts, and retries with idempotency keys and outbox pattern.
+            a robust e-commerce web application for selling tech products using React.js and Java Spring Boot
           </p>
           <ul class="list">
-            <li>p99 &lt; 120ms @ 2k rps</li>
-            <li>Blue/green deploys, feature flags</li>
-            <li>Comprehensive contract tests</li>
+            <li>Enhanced user experience by reducing latency by 500ms through optimized Redis caching integration.</li>
+            <li>Deployed application on AWS (EC2, S3, RDS), ensuring 99.9% uptime with auto-scaling and load balancing.</li>
           </ul>
-          <div class="card__foot">
+          <!-- <div class="card__foot">
             <a class="pill" href="#">Repo</a>
             <a class="pill" href="#">OpenAPI</a>
-          </div>
+          </div> -->
         </article>
 
         <article class="card">
           <div class="card__head">
-            <h3><a href="#" rel="nofollow">Observability Pack</a></h3>
+            <h3>Gemini-Mate</h3>
             <code class="tag">Python • FastAPI • Prometheus</code>
           </div>
           <p class="muted">
-            Drop-in metrics, logs, and traces starter for services. Includes dashboards & SLO templates.
+            An AI-powered learning aid using React.js and Google Gemini AI to help students study more eﬃciently.
           </p>
           <ul class="list">
-            <li>Zero-config service metrics</li>
-            <li>Error budgets + alerts</li>
-            <li>Structured logging helpers</li>
+            <li>Built Gemini-Mate, an automated learning aid using React.js and Google Gemini AI, reducing student study time by
+10 hours weekly through intelligent visualization tools.</li>
+            <li>Boosted student engagement by 35% by integrating features such as flashcard creation, mind maps, road map
+visualizers, and personalized learning paths.</li>
+            <li>Improved teaching eﬃciency by 8 hours weekly by automating lesson preparation and providing tailored learning
+experiences.</li>
           </ul>
-          <div class="card__foot">
+          <!-- <div class="card__foot">
             <a class="pill" href="#">Repo</a>
             <a class="pill" href="#">Docs</a>
-          </div>
+          </div> -->
         </article>
+  
+        <article class="card">
+            <div class="card__head">
+              <h3>Bare-Metal LED Blinking on ATmega328P</h3>
+              <code class="tag">Embedded Systems • C • ATmega328P</code>
+            </div>
+            <p class="muted">
+              a simple bare-metal application for blinking an LED on the ATmega328P microcontroller
+            </p>
+            <ul class="list">
+              <li>Utilized AVR-GCC toolchain for compiling and uploading code to the ATmega328P.</li>
+              <li>Implemented direct register manipulation for controlling GPIO pins.</li>
+              <li>Compiled and flashed firmware using avr-gcc, avrdude, and Makefile automation for streamlined development.</li>
+              <li>Analyzed ATmega328P datasheets, pinout diagrams, and schematics to optimize direct hardware manipulation.</li>
+            <!-- <div class="card__foot">
+              <a class="pill" href="#">Repo</a>
+              <a class="pill" href="#">OpenAPI</a>
+            </div> -->
+        </article>
+
+        <article class="card">
+            <div class="card__head">
+              <h3>IoT-Based Smart Home Automation Using ESP32 & Raspberry Pi</h3>
+              <code class="tag">ESP32 • Raspberry Pi • IoT</code>
+            </div>
+            <p class="muted">
+              an ESP32-based embedded system to control LEDs and relays for home automation
+            </p>
+            <ul class="list">
+              <li>Utilized ESP32's Wi-Fi capabilities for remote control and monitoring of home devices.</li>
+              <li>Integrated Raspberry Pi for data processing and visualization, creating a seamless IoT ecosystem.</li>
+              <li>Implemented MQTT protocol for efficient communication between devices.</li>
+              <li>Integrated DHT11 sensor to monitor temperature and humidity in real time.</li>
+            <!-- <div class="card__foot">
+              <a class="pill" href="#">Repo</a>
+              <a class="pill" href="#">OpenAPI</a>
+            </div> -->
+        </article>
+
+        <article class="card">
+            <div class="card__head">
+              <h3>Weather App</h3>
+              <code class="tag">Spring Boot • MongoDB • React.js</code>
+            </div>
+            <p class="muted">
+              a robust weather application for providing real-time weather updates using React.js and Node.js
+            </p>
+            <ul class="list">
+              <li>For getting information about current weather a free weather api is used from openweathermap.org</li>
+            <!-- <div class="card__foot">
+              <a class="pill" href="#">Repo</a>
+              <a class="pill" href="#">OpenAPI</a>
+            </div> -->
+          </article>
+
       </div>
     </section>
 
@@ -263,7 +319,9 @@
     <div class="container footer__inner">
       <span class="muted">© <span id="year"></span> Ishan Jawade</span>
       <div class="muted">ishanjawade@outlook.com</div>
-      <a class="muted" href="files/Ishan Jawade.pdf" target="_blank">Resume (PDF)</a>
+      <button>
+        <a class="muted" href="files/Ishan Jawade.pdf" target="_blank">Resume (PDF)</a>
+      </button>
     </div>
   </footer>
 
