@@ -122,16 +122,6 @@ html[data-theme="light"] .theme-toggle .moon{ display: none; }
   .drawer, .scrim{ display: none !important; }
 }
 
-/* Drawer close button (inside left drawer) */
-.drawer__close{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  /* .iconbtn already gives size/shape; adjust if you want it bigger: */
-  width: 36px;
-  height: 36px;
-}
-
 /* Hero */
 .hero{ border-bottom: 1px solid var(--border); background: var(--surface); }
 .hero__inner{ display: grid; grid-template-columns: 96px 1fr; gap: 24px; align-items: center; padding: 28px 0; }
@@ -226,9 +216,6 @@ html[data-theme="dark"] .btn:hover{ border-color: #3a424b; }
 .footer__email{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 480px){
   .footer__email{ display: none; } /* CSS fallback when very tight */
-}
-.footer__inner button{
-  border: none; background: none; color: var(--link); cursor: pointer; padding: 0; font: inherit;
 }
 
 /* Links */
